@@ -14,15 +14,16 @@ This repository is my hands-on lab for exploring Nix: experimenting with flakes,
 - Enter an experiment's development shell (example):
 
 ```bash
-# from the repo root
-nix develop ./nix-c-test
+# from the flake directory
+cd nix-c-test/C00
+nix develop
 # or run a single command inside the flake's dev shell
-nix develop ./nix-c-test --command bash -c './main'
+nix develop --command bash -c './main'
 ```
 
 ## What's inside
 
-- `nix-c-test/` — a minimal flake demonstrating a C build and dev shell.
+- `nix-c-test/C00/` — a minimal flake demonstrating a C build and dev shell.
 - Other folders: small, self-contained experiments (C/C++, Python, Haskell, toolchain tests).
 
 ## Goals
